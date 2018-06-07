@@ -3,8 +3,8 @@ python:
   - "3.6"
   #- "3.6-dev"
 before_install:
-  - cd Python_3_OOP
+  - cd Learning-Python\Python_3_OOP
 before_script:
-  - cd Python_3_OOP
+  - cd Learning-Python\Python_3_OOP
 script:
   - py.test
