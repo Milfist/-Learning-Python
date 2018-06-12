@@ -7,7 +7,9 @@ I start on 05-30-2018 and this is what I'm developing while doing training and e
 ## Feats:
 
 * My first script. In script folder, a code to decompose numbers.
-* Python and OOP. My first application based on the paradigm of object-oriented programming.
+* [Python and OOP. My first application based on the paradigm of object-oriented programming.][1]
+* Module management
+* File management
 
 
 # By:
@@ -15,3 +17,4 @@ I start on 05-30-2018 and this is what I'm developing while doing training and e
 [![alt text](https://github.com/Milfist/Docs/blob/master/milfist.JPG)][0]
 
 [0]: https://github.com/Milfist/
+[1]: https://github.com/Milfist/OOP_Python_3
