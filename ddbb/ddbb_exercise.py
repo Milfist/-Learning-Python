@@ -1,3 +1,8 @@
+"""
+    Sqlite3 module test.
+    In this module there are some examples of using DB with Sqlite3.
+"""
+
 import sqlite3
 
 conexion = sqlite3.connect('ejemplo.db')
