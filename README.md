@@ -10,6 +10,7 @@ I start on 05-30-2018 and this is what I'm developing while doing training and e
 * [Python and OOP. My first application based on the paradigm of object-oriented programming.][1]
 * Module management
 * File management
+* DDBB Sqlite3. 
 
 
 # By:
