@@ -1,7 +1,9 @@
 import queue
 
 """
-    Check if a word is a palindrome using queues and stacks. Is traditional  
+    Check if a word is a palindrome using queues and stacks. It is a traditional way of doing it. We avoid nesting 
+    two loops.
+    There is a small example of the power of Python doing all of this in one small method. 
 """
 
 
@@ -37,6 +39,9 @@ class Palindrome:
 
         return True
 
+    def is_palindrome_space_and_upper(self, chain):
+        return self.is_palindrome(str.lower(chain).replace(' ', ''))
+
     """   
         In python it is very easy to check if a word is a palindrome. 
         Compare the chain with itself, but going around with slicing
@@ -46,25 +51,3 @@ class Palindrome:
     @staticmethod
     def simple_is_palindrome(chain):
         return chain == chain[::-1]
-
-
-# print("Enter a word: ")
-#
-# input_data = input()
-#
-# obj = Palindrome()
-#
-# if obj.is_palindrome(input_data):
-#     print("The word, " + input_data + ", is a palindrome.")
-# else:
-#     print("The word, " + input_data + ", is not a palindrome.")
-#
-# print("simple_is_palindrome")
-# print(obj.simple_is_palindrome(input_data))
-#
-#
-# list1 = ['physics', 'chemistry', 1997, 2000]
-# list2 = [1, 2, 3, 4, 5, 6, 7 ]
-#
-# print ("list1[0]: ", list1[0])
-# print ("list2[1:5]: ", list2[::-1])
