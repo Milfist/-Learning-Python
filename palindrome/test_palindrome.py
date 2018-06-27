@@ -29,5 +29,8 @@ class PalindromeTest(TestCase):
     def test_should_be_return_false_when_check_simple_is_palindrome(self):
         self.assertFalse(Palindrome.simple_is_palindrome('persona'))
 
+    def test_should_be_return_true_when_check_is_palindrome__(self):
+        self.assertTrue(Palindrome.palindrome('reconocer'))
+
     def tearDown(self):
         del self.check_palindrome

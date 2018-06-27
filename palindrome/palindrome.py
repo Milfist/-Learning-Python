@@ -32,8 +32,12 @@ class Palindrome:
     def is_palindrome_space_and_upper(self, chain):
         return self.is_palindrome(str.lower(chain).replace(' ', ''))
 
-    """   
+    """  
+        O(n) 
         Compare the chain with itself, but going around with slicing
+        
+        Hay que reordenar toda la cadena
+        
         Ex: chain = jamon
             chain[::-1] = nomaj
             return False
@@ -44,3 +48,13 @@ class Palindrome:
     @staticmethod
     def simple_is_palindrome(chain):
         return chain == chain[::-1]
+
+    """
+        Recorremos la mitad de la cadena comparando cada elemento con su opuesto en la cadena
+    """
+    @staticmethod
+    def palindrome(chain):
+        for i in range(len(chain) // 2):
+            if chain[i] != chain[-1 - i]:
+                return False
+        return True
