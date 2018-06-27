@@ -43,10 +43,13 @@ class Palindrome:
         return self.is_palindrome(str.lower(chain).replace(' ', ''))
 
     """   
-        In python it is very easy to check if a word is a palindrome. 
         Compare the chain with itself, but going around with slicing
         Ex: chain = jamon
             chain[::-1] = nomaj
+            return False
+        Ex: chain = oso
+            chain[::-1] = oso
+            :return True
     """
     @staticmethod
     def simple_is_palindrome(chain):
