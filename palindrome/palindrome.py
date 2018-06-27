@@ -4,6 +4,8 @@ import queue
     Check if a word is a palindrome using queues and stacks. It is a traditional way of doing it. We avoid nesting 
     two loops.
     There is a small example of the power of Python doing all of this in one small method. 
+    Big O notation --> O = N ^ 2
+    
 """
 
 
@@ -13,27 +15,15 @@ class Palindrome:
         self.queue = queue.Queue()
         self.stack = []
 
-    def enqueue_character(self, character):
-        self.queue.put(character)
-
-    def push_character(self, character):
-        self.stack.append(character)
-
-    def pop_character(self):
-        return self.stack.pop()
-
-    def dequeue_character(self):
-        return self.queue.get()
-
     def is_palindrome(self, chain):
         length = len(chain)
 
         for letter in range(length):
-            self.push_character(chain[letter])
-            self.enqueue_character(chain[letter])
+            self.stack.append(chain[letter])
+            self.queue.put(chain[letter])
 
         for i in range(length // 2):
-            if self.pop_character() != self.dequeue_character():
+            if self.stack.pop() != self.queue.get():
                 return False
                 break
 
